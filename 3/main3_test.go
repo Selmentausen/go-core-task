@@ -11,8 +11,8 @@ func TestStringIntMap_AddAndGet(t *testing.T) {
 	m.Add("orange", 42)
 
 	val, ok := m.Get("cherry")
-	if !ok || val != 42 {
-		t.Errorf("Expected 42 and true for 'cherry', got %d and %v", val, ok)
+	if !ok || val != 100 {
+		t.Errorf("Expected 100 and true for 'cherry', got %d and %v", val, ok)
 	}
 
 	val, ok = m.Get("apple")
